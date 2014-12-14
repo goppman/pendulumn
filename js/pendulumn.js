@@ -9,7 +9,7 @@ function canvas() {
   }
     function drawRectangle() {
     context.fillStyle = '#bc141a';
-    context.fillRect(0,0,100,140);
+    context.fillRect(0,0,1000,1600);
 
     }
 
@@ -21,9 +21,9 @@ function canvas() {
       var time = 0;
       var redraw = function (){
         context.clearRect(0,0, myCanvas.width, myCanvas.height);
-      for (i=0; i < n ;i++) {
-        x = myCanvas.width / 2 + Math.sin(time *i) *05;
-        y = i/n * myCanvas.height + Math.cos(time *i) *05;
+      for (i=0; i < n ;i++) {5
+        x = myCanvas.width / 2 + Math.sin(time *i) *50;
+        y = i/n * myCanvas.height - Math.cos(time*n) *2;
         context.fillRect(x,y, width, height);
         i++;
         }
