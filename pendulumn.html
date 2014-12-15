@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
-<title>Canvas Pendulums</title>
+  <meta charset=utf-8 />
+  <title>Canvas Pendulums</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 
-<canvas id="myCanvas" width="500"> </canvas>
+  <div class="well col-sm-3 col-xs-12">
+    Your form goes here, bozos
+ <form id='form' role='form'>
 
 
-<script src="js/pendulumn.js"> </script>
+    <div class='xMulti'>
+      <label for='xMulti' > Give a number to increase X speed</label>
+      <input type='text' name='x_multi' class='form-control' value='10'> </input>
+    </div>
+    <div class='yMulti'>
+      <label for='yMulti' > Give a number to increase Y speed</label>
+      <input type='text' name='y_multi' class='form-control' value="10"> </input>
+    </div>
+
+    <div class='numBoxes'>
+      <label for='numBoxes' > Give a number to create more boxes</label>
+      <input type='text' name='num_boxes' class='form-control' value="10"> </input>
+    </div>
+
+    <div class='boxWidth'>
+      <label for='boxWidth' > Give a number to control box width</label>
+      <input type='text' name='box_width' class='form-control' value="10"> </input>
+    </div>
+
+    <div class='boxHeight'>
+      <label for='boxHeight' > Give a number to control box height</label>
+      <input type='text' name='box_height' class='form-control' value="10"> </input>
+    </div>
+
+  </div>
+  <div class="well col-sm-9 col-xs-12">
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+  </div>
+<div class=" col-xs-12">
+  <input type='submit' value='Enter' class="btn btn-success"></input>
+</div>
+
+</form>
+
+  <script src="js/pendulum.js"></script>
 </body>
 </html>
